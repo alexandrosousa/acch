@@ -1,14 +1,25 @@
 header {
-    background-color: blueviolet;
+    background-color: rgb(198, 228, 63);
 }
 
 .body {
-    width: 660px;
+    /* width: 660px;
     height: 300px;
-    margin: 34px 185px 200px;
+    margin: 34px 185px 200px; */
     background-color: #88f7b2;
 }
 
 .aside {
     background-color: deeppink;
+    float: right;
+}
+
+#rodape {
+    background-color: #FFFFFF;
+    height: 100px;
+}
+
+#footerTop {
+    background-color: #F2F2F2;
+    height: 100px;
 }
