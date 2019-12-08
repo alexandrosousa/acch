@@ -1,0 +1,14 @@
+header {
+    background-color: blueviolet;
+}
+
+.body {
+    width: 660px;
+    height: 300px;
+    margin: 34px 185px 200px;
+    background-color: #88f7b2;
+}
+
+.aside {
+    background-color: deeppink;
+}
