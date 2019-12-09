@@ -1,25 +1,86 @@
+html,
+body {
+    height: 100%;
+}
+
+#site {
+    background-color: #8d461d;
+    min-height: 100%;
+    position: relative;
+}
+
 header {
-    background-color: rgb(198, 228, 63);
+    background-color: #2e9405;
 }
 
 .body {
-    /* width: 660px;
-    height: 300px;
-    margin: 34px 185px 200px; */
     background-color: #88f7b2;
 }
 
 .aside {
-    background-color: deeppink;
+    background-color: #ff1493;
     float: right;
 }
 
-#rodape {
+#footer {
     background-color: #FFFFFF;
+    width: 100%;
     height: 100px;
+    position: absolute;
+    bottom: 0;
 }
 
 #footerTop {
     background-color: #F2F2F2;
     height: 100px;
+}
+
+#footerLogo {
+    margin: auto;
+    display: block;
+}
+
+#footerLogo img {
+    width: 147px;
+    height: 47px;
+    margin: auto;
+    display: block;
+}
+
+#footerBottom {
+    margin: 20px 65px;
+}
+
+#footerMenu {
+    display: block;
+    float: left;
+    font-size: 12px;
+}
+
+#footerMenu ul li {
+    display: inline-block;
+}
+
+#footerMenu ul li a {
+    padding: 2px 40px;
+    display: inline;
+    color: #4d4d4d;
+}
+
+#footerMenu ul li a:hover {
+    color: #b21f24;
+}
+
+#footerSocialNetwork {
+    display: block;
+    float: right;
+    margin-bottom: 10px;
+}
+
+#footerSocialNetwork a {
+    padding: 2px 5px;
+}
+
+#footerSocialNetwork i {
+    color: #BFBFBF;
 }
