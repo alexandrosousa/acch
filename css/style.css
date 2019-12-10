@@ -1,5 +1,6 @@
 html,
 body {
+    font-family: 'Hind', sans-serif;
     height: 100%;
 }
 
@@ -17,9 +18,49 @@ header {
     background-color: #88f7b2;
 }
 
+#podcast {
+    background-color: #F2F2F2;
+    margin-bottom: 34px;
+    height: 45px;
+    border-radius: 7px;
+}
+
+#podcast-left {
+    margin: auto;
+    padding-left: 20px;
+    background-color: #B21F24;
+    width: 400px;
+    height: 100%;
+    line-height: 45px;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#podcast-right {
+    color: #4d4d4d;
+    margin: auto;
+    height: 100%;
+    line-height: 45px;
+    font-weight: 400;
+    padding-left: 420px;
+}
+
 .aside {
     background-color: #ff1493;
     float: right;
+}
+
+#notificacao {
+    position: fixed;
+    left: 20px;
+    bottom: 10px;
+    z-index: 100;
 }
 
 #footer {
