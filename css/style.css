@@ -24,6 +24,8 @@ header {
 
 #footer {
     background-color: #FFFFFF;
+    border-top: #bbb9b9 solid;
+    border-top-width: 0.5px;
     width: 100%;
     height: 100px;
     position: absolute;
@@ -36,8 +38,11 @@ header {
 }
 
 #footerLogo {
+    /* Centralizado verticalmente: */
     margin: auto;
     display: block;
+    position: relative;
+    top: 25%;
 }
 
 #footerLogo img {
