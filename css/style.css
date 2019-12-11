@@ -181,7 +181,7 @@ header {
 }
 
 .autor-name {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #noticias1-right {
@@ -190,6 +190,7 @@ header {
     display: inline-block;
     font-size: 17px;
     padding: 32px 25px;
+    height: 620px;
 }
 
 #noticias1-right-titulo {
@@ -207,9 +208,9 @@ header {
     text-align: center;
 }
 
-#noticias2 {
+#blogs-colunas {
     margin-top: 50px;
-    background-color: lime;
+    background-color: #BFBFBF;
 }
 
 #notificacao {
