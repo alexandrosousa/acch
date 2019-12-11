@@ -6,48 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Outro mundo em debate | Revista Fórum</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div id="site" class="container">
         <header>
             <div id="headerTop">
-                CABEÇALHO TOPO
-
-                <div id="socialNetwork">
-                    Rede social
+                <div id="socialNetwork" class="icons-color">
+                    <a href="https://www.facebook.com/forumrevista/" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/revistaforum/" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/revistaforum/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/user/forumrevista" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
                 </div>
 
                 <div id="date">
-                    Data
+                    <a href="https://revistaforum.com.br/sobre-a-revista">Quem somos</a><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 de dezembro de 2019</span>
                 </div>
             </div>
 
             <div id="headerTitle">
-                CABEÇALHO TÍTULO
-
                 <div id="logo">
-                    Logo
+                    <img src="img/logo.png" alt="Logo">
                 </div>
 
                 <div id="search">
-                    Pesquisa
+                    <div id="btn-search">
+                        <a class="button" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" onclick="btnPesquisarClick('btnPesquisar')">
+                            <i id="btnPesquisar" class="fa fa-search fa-2x" aria-hidden="true"></i>
+                        </a>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2"><i id="btnPesquisarEdit" class="fa fa-search fa-2x" aria-hidden="true" 
+                                        onclick="btnPesquisarClick('btnPesquisarEdit')"></i></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div id="headerMenu">
-                CABEÇALHO MENU
+                <div id="headerMenu">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Alterna navegação">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                <div id="menu">
-                    Menu
-                </div>
-
-                <div id="sponsor">
-                    Apoiador
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                              Assuntos
+                                            </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/politica/">Política</a>
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/brasil/">Brasil</a>
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/movimentos/">Movimentos</a>
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/global/">Global</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="https://revistaforum.com.br/podcasts/">Podcasts</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Blogs
+                                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="http://revistaforum.com.br/blogdorovai/">Blog do Rovai</a>
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/blogs/ocolunista/">O Colunista</a>
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/blogs/sindicatopopular/">Sindicato Popular</a>
+                                        <a class="dropdown-item" href="http://revistaforum.com.br/blogs/injecaonatesta/">Injeção na Testa</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  Colunistas
+                                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/colunistas/adrianadias/">Adriana Dias</a>
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/colunistas/alexandrepadilha/">Alexandre Padilha</a>
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/colunistas/danielalima/">Daniela Lima</a>
+                                        <a class="dropdown-item" href="https://revistaforum.com.br/colunistas/igorfuser/">Igor Fuser</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                                <a href="https://revistaforum.com.br/apoie" class="btn btn-danger">Seja um apoiador</a>
+                            </form>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </header>
@@ -62,13 +116,84 @@
                 </div>
             </div>
 
-            CORPO DA PÁGINA
+            <div id="noticias1">
+                <div id="noticias1-left">
+                    <div id="noticias1-left-2-col">
+                        <img src="img/noticia1-1.png" alt="Imagem principal da seção">
+                        <div id="noticias1-left-2-col-right">
+                            <span class="etiqueta">política</span>
+                            <h1>TSE confirma cassação da senadora Selma Arruda, conhecida como “Moro de saias”</h1>
+                            <hr>
+                            <div id="noticias1-left-2-col-mais">
+                                <span class="fa-stack media-object"> <i class="fa fa-circle-thin fa-stack-2x"></i> <i class="fa fa-plus fa-stack-1x" aria-hidden="true"></i> </span>
+                                <a href="https://revistaforum.com.br/politica/empresario-que-emprestou-casa-em-campanha-de-bolsonaro-revela-visitas-de-queiroz/">TSE oficializa e Brasil ganha novo partido político: o Unidade Popular (UP), de esquerda e socialista</a>
+                                <br>
+                                <span class="fa-stack media-object"> <i class="fa fa-circle-thin fa-stack-2x"></i> <i class="fa fa-plus fa-stack-1x" aria-hidden="true"></i> </span>
+                                <a href="https://revistaforum.com.br/politica/empresario-que-emprestou-casa-em-campanha-de-bolsonaro-revela-visitas-de-queiroz/">Empresário que emprestou casa em campanha de Bolsonaro revela visitas de Queiroz</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="noticias1-left-3-col">
+                        <div class="card-group">
+                            <div class="card border-0">
+                                <img class="card-img-top image-cover" src="img/noticia1-2.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <span class="etiqueta">brasil</span>
+                                    <p class="card-text">
+                                        <a href="https://revistaforum.com.br/brasil/grupo-catolico-de-extrema-direita-ocupa-escola-em-sao-paulo/">Grupo católico de extrema direita ocupa escola em São Paulo</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card border-0">
+                                <img class="card-img-top image-cover" src="img/noticia1-3.png" alt="Imagem de capa do card">
+                                <div id="middle-card" class="card-body">
+                                    <span class="etiqueta">global</span>
+                                    <p class="card-text">
+                                        <a href="https://revistaforum.com.br/global/quem-e-greta-thunberg-chamada-de-pirralha-por-bolsonaro/">Quem é Greta Thunberg, chamada de “pirralha” por Bolsonaro</a>
+                                    </p>
+                                    <hr>
+                                    <img class="autor" src="img/autor-gabriella-sales.jpeg" alt="Autor"><strong class="autor-name">Gabriella Sales</strong>
+                                </div>
+                            </div>
+                            <div class="card border-0">
+                                <img class="card-img-top image-cover" src="img/noticia1-4.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <span class="etiqueta">global</span>
+                                    <p class="card-text">
+                                        <a href="https://revistaforum.com.br/global/em-discurso-de-posse-alberto-fernandez-pede-nunca-mais-ao-uso-politico-da-justica-na-argentina/">Em discurso de posse, Alberto Fernández pede “nunca mais” ao uso político da Justiça na Argentina</a>
+                                    </p>
+                                    <hr>
+                                    <img class="autor" src="img/autor-victor-farinelli.jpeg" alt="Autor"><strong class="autor-name">Victor Farinelli</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="noticias1-right">
+                    <div id="noticias1-right-titulo">
+                        <span id="noticias1-right-ultima">última</span> <span id="noticias1-right-noticia" class="">hora</span>
+                    </div>
+                    <br>
+                    <a href="#">A toque de caixa, Alcolumbre pauta para amanhã votação de pacote anticrime de Moro no Senado</a>
+                    <hr>
+                    <a href="#">Em discurso de posse, Alberto Fernández pede “nunca mais” ao uso político da Justiça na Argentina</a>
+                    <hr>
+                    <a href="#">Foto histórica: Cristina cumprimenta o ex-presidente Macri</a>
+                    <hr>
+                    <a href="#">PT: Operação da Lava Jato contra filho de Lula mostra abuso de Moro para envenenar sociedade com mentiras</a>
+                    <hr>
+                    <div id="noticias1-right-mais-noticias">
+                        <a href="#">mais notícias</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="noticias2">
+                <p>Teste noticias 2</p>
+            </div>
         </section>
-
-        <aside class="aside">
-            BARRA LATERAL
-        </aside>
-
     </div>
 
     <div id="notificacao" data-toggle="tooltip" data-placement="right" title="Inscrever para notificações">
@@ -94,10 +219,10 @@
             </div>
 
             <div id="footerSocialNetwork">
-                <a href="https://www.facebook.com/forumrevista/" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/revistaforum/" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/revistaforum/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
-                <a href="https://www.youtube.com/user/forumrevista" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/forumrevista/" target="_blank"><i class="fa fa-facebook-official fa-2x icons-color" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/revistaforum/" target="_blank"><i class="fa fa-twitter fa-2x icons-color" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/revistaforum/" target="_blank"><i class="fa fa-instagram fa-2x icons-color" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com/user/forumrevista" target="_blank"><i class="fa fa-youtube-square fa-2x icons-color" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
