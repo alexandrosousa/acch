@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Outro mundo em debate | Revista Fórum</title>
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- slick carousel -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- slick carousel -->
+    <script src="js/slick.min.js"></script>
+
 </head>
 
 <body>
@@ -172,8 +183,8 @@
                 </div>
 
                 <div id="noticias1-right">
-                    <div id="noticias1-right-titulo">
-                        <span id="noticias1-right-ultima">última</span> <span id="noticias1-right-noticia" class="">hora</span>
+                    <div class="noticias1-right-titulo">
+                        <span class="noticias1-right-ultima">última</span> <span>hora</span>
                     </div>
                     <br>
                     <a href="#">A toque de caixa, Alcolumbre pauta para amanhã votação de pacote anticrime de Moro no Senado</a>
@@ -184,7 +195,7 @@
                     <hr>
                     <a href="#">PT: Operação da Lava Jato contra filho de Lula mostra abuso de Moro para envenenar sociedade com mentiras</a>
                     <hr>
-                    <div id="noticias1-right-mais-noticias">
+                    <div class="noticias1-right-mais-noticias">
                         <a href="#">mais notícias</a>
                     </div>
                 </div>
@@ -195,10 +206,105 @@
     </div>
 
     <div id="blogs-colunas">
-        <p>Fazer carrocel com os cards da seção.</p>
-        <p>Para fazer o título pega o que eu fiz na seção "última hora"</p>
-        <p>Quando for adicionar itens no css faz separado lá no final que fica mais fácil para eu integrar aqui no meu.</p>
-        <p>Eu removi aquele reset.css. Ele ainda está no código mas eu não estou mais executando ele.</p>
+        <div class="noticias1-right-titulo blogs-colunas-titulo">
+            <span>blogs e </span><span class="noticias1-right-ultima">colunas</span>
+        </div>
+
+        <div class="cards" id="cards">
+            <div class="blogs-colunas-card">
+                <img src="/img/ivan-consenza-de-souza-150x150.jpg">
+                <div class="blogs-colunas-card-texto">
+                    <p>Ivan Cosenza de Souza</p>
+                    <p class="noticias1-right-mais-noticias"><a href="https://revistaforum.com.br/colunistas/ivancosenzadesouza/cartas-do-pai-a-pirralha-e-o-presidente/">Cartas do Pai: “A pirralha e o presidente”</a></p>
+                </div>
+            </div>
+
+            <div class="blogs-colunas-card">
+                <img src="/img/luiz-roberto-alves-150x150.jpg">
+                <div class="blogs-colunas-card-texto">
+                    <p>Luiz Roberto Alves</p>
+                    <p class="noticias1-right-mais-noticias"><a href="https://revistaforum.com.br/colunistas/luiz-roberto-alves/greta-e-os-showzinhos-de-bolsonaro/">Greta e os showzinhos de Bolsonaro</a></p>
+                </div>
+            </div>
+
+            <div class="blogs-colunas-card">
+                <img src="/img/vinicius-sartorato.jpg">
+                <div class="blogs-colunas-card-texto">
+                    <p>Vinicius Sartorato</p>
+                    <p class="noticias1-right-mais-noticias"><a href="https://revistaforum.com.br/rede/gra-bretanha-a-eleicao-desta-quinta-feira-nao-deve-resolver-a-novela-do-brexit/">Grã-Bretanha: A eleição desta quinta-feira não deve resolver a novela do Brexit</a></p>
+                </div>
+            </div>
+
+            <div class="blogs-colunas-card">
+                <img src="/img/cleber-lourenco-150x150.jpg">
+                <div class="blogs-colunas-card-texto">
+                    <p>Cleber Lourenço</p>
+                    <p class="noticias1-right-mais-noticias"><a href="https://revistaforum.com.br/blogs/ocolunista/selma-a-moro-de-saias-se-deu-mal-e-o-moro-de-calcas/">Selma, a Moro de saias, se deu mal. E o Moro de calças?</a></p>
+                </div>
+            </div>
+
+            <div class="blogs-colunas-card">
+                <img src="/img/cleber-lourenco-150x150.jpg">
+                <div class="blogs-colunas-card-texto">
+                    <p>Cleber Lourenço</p>
+                    <p class="noticias1-right-mais-noticias"><a href="https://revistaforum.com.br/blogs/ocolunista/ontem-pirralha-hoje-pessoa-do-ano/">Ontem pirralha, hoje pessoa do ano</a></p>
+                </div>
+            </div>
+
+            <div class="blogs-colunas-card">
+                <img src="/img/adriana-dias-150x150.jpg">
+                <div class="blogs-colunas-card-texto">
+                    <p>Adriana Dias</p>
+                    <p class="noticias1-right-mais-noticias"><a href="https://revistaforum.com.br/colunistas/adrianadias/neonazismo-vive-de-um-culto-a-lideres-da-era-hitlerista/">Neonazismo vive de um culto a líderes da era hitlerista</a></p>
+                </div>
+            </div>
+
+            <div class="blogs-colunas-card">
+                <img src="/img/plinio-teodoro-300x300.jpg">
+                <div class="blogs-colunas-card-texto">
+                    <p>Plínio Teodoro</p>
+                    <p class="noticias1-right-mais-noticias"><a href="https://revistaforum.com.br/colunistas/plinioteodoro/em-paz-lula-mostra-que-esta-preparado-para-a-guerra/">Em paz, Lula mostra que está preparado para a guerra</a></p>
+                </div>
+            </div>
+
+            <div class="blogs-colunas-card">
+                <img src="/img/luiz-roberto-alves-150x150.jpg">
+                <div class="blogs-colunas-card-texto">
+                    <p>Luiz Roberto Alves</p>
+                    <p class="noticias1-right-mais-noticias"><a href="https://revistaforum.com.br/colunistas/luiz-roberto-alves/o-muro-sobre-berlim-feixe-de-preconceitos-e-estereotipos/">O Muro sobre Berlim, feixe de preconceitos e estereótipos</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="noticias2">
+        <div id="noticias2-left">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm">
+                        <div style="float: left;">
+                            <img src=" img/noticia2-1.png " alt="Imagem de capa do card">
+                        </div>
+                        <div style="float: right;">
+                            <span class="etiqueta ">política</span>
+                            <div class="font-cards">
+                                <a href="https://revistaforum.com.br/politica/jair-bolsonaro-faz-exames-para-verificar-possivel-cancer-de-pele/ ">Jair Bolsonaro faz exames para verificar possível câncer de pele</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm">
+                        <div style="float: left;">
+                            <img src=" img/noticia2-2.png " alt="Imagem de capa do card">
+                        </div>
+                        <span class="etiqueta ">política</span>
+                        <a href="https://revistaforum.com.br/politica/haddad-questiona-bolsonaro-se-ele-iria-em-um-debate-com-greta-thunberg/ ">Haddad questiona Bolsonaro se ele iria em um debate com Greta Thunberg</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="notificacao" data-toggle="tooltip" data-placement="right" title="Inscrever para notificações">
@@ -235,7 +341,6 @@
 
 </html>
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
+
 <script src="js/script.js"></script>
